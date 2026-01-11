@@ -27,112 +27,11 @@
       padding: 20px;
     }
 
-    svg {
-      width: 95%;
-      max-width: 1200px;
-      height: auto;
-    }
-
-    .country {
-      fill: #8b1e1e;
-      stroke: #ffffff;
-      stroke-width: 0.5;
-      transition: fill 0.2s ease;
-      cursor: pointer;
-    }
-
-    .country:hover {
-      fill: #c0392b;
-    }
-
-    #tooltip {
-      position: absolute;
-      background: rgba(0,0,0,0.8);
-      color: #ffffff;
-      padding: 8px 12px;
-      border-radius: 6px;
-      font-size: 14px;
-      pointer-events: none;
-      display: none;
-      z-index: 10;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>Carte des vins et alcools du monde</h1>
-  <p>Cliquez sur un pays pour découvrir ses alcools emblématiques</p>
-</header>
-
-<div id="tooltip"></div>
-
-<main class="map-container">
-
-  <!-- CARTE DU MONDE (VERSION TEMPORAIRE SIMPLIFIÉE) -->
-  <!-- La vraie carte mondiale détaillée remplacera ce SVG -->
-
-  <svg viewBox="0 0 2000 1001" xmlns="http://www.w3.org/2000/svg">
-
-    <!-- FRANCE -->
-    <path
-      id="FR"
-      class="country"
-      data-name="France"
-      data-alcool="Vin, Cognac, Armagnac"
-      data-link="https://www.twil.fr"
-      d="M1020 420 L1040 420 L1040 450 L1020 450 Z"
-    />
-
-    <!-- ITALIE -->
-    <path
-      id="IT"
-      class="country"
-      data-name="Italie"
-      data-alcool="Vin, Grappa"
-      data-link="https://www.callmewine.com"
-      d="M1060 440 L1080 440 L1080 500 L1060 500 Z"
-    />
-
-    <!-- ÉCOSSE -->
-    <path
-      id="GB-SCT"
-      class="country"
-      data-name="Écosse"
-      data-alcool="Whisky"
-      data-link="https://www.thewhiskyexchange.com"
-      d="M960 360 L980 360 L980 380 L960 380 Z"
-    />
-
-    <!-- JAPON -->
-    <path
-      id="JP"
-      class="country"
-      data-name="Japon"
-      data-alcool="Saké, Whisky japonais"
-      data-link="https://www.saq.com"
-      d="M1550 450 L1570 450 L1570 500 L1550 500 Z"
-    />
-
-    <!-- MEXIQUE -->
-    <path
-      id="MX"
-      class="country"
-      data-name="Mexique"
-      data-alcool="Tequila, Mezcal"
-      data-link="https://www.lavinia.com"
-      d="M500 520 L540 520 L540 560 L500 560 Z"
-    />
-
-  </svg>
+    <object
+  type="image/svg+xml"
+  data="assets/world.svg"
+  id="world-map">
+</object>
 </main>
 
 <footer>
